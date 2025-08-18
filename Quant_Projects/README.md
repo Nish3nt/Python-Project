@@ -51,3 +51,24 @@ Cells 6-8: Model training and evaluation.
 Cells 9-11: Strategy simulation and performance analysis.
 
 Cell 12: Project conclusion and key takeaways.
+
+# Key Results
+Model Accuracy: The LightGBM model achieved a validation AUC of approximately 0.72, indicating a good ability to distinguish between up and down price moves.
+
+Ranking Quality: The model demonstrated strong performance on high-confidence predictions, with a Precision@K score of ~88% at K=50. This is particularly valuable for trading, as it allows the strategy to only act on the most reliable signals.
+
+Simulated Profitability: The backtest produced a positive PnL and a stable equity curve, validating the strategy's profitability under simulated market conditions.
+
+# Future Improvements
+Integrate a trade data file for a more granular and realistic fill simulation.
+
+Implement more advanced risk management controls, such as dynamic quoting based on inventory.
+
+Engineer more complex features using higher-level order book data and temporal dynamics.
+
+# Dataset
+This project uses the following public dataset from Kaggle:
+
+High-frequency crypto limit order book data: martinsn/high-frequency-crypto-limit-order-book-data
+
+Link: https://www.kaggle.com/datasets/martinsn/high-frequency-crypto-limit-order-book-data
